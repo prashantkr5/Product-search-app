@@ -1,0 +1,60 @@
+/* ─── SearchBar Styles ───────────────────────────────────────────── */
+
+.searchbar-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.searchbar-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #4b5563;
+  pointer-events: none;
+}
+
+.searchbar-input {
+  width: 100%;
+  padding: 14px 44px 14px 44px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #f5f0e8;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.searchbar-input::placeholder {
+  color: #4b5563;
+}
+
+.searchbar-input:focus {
+  outline: none;
+  border-color: rgba(251, 191, 36, 0.5);
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.08);
+}
+
+/* Clear (✕) button — only visible when there's text */
+.searchbar-clear {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+
+.searchbar-clear:hover {
+  color: #fbbf24;
+}
